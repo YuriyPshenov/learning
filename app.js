@@ -1,180 +1,104 @@
-// 1 Переменные
-// camelCase
-// const fistName = 'Yuriy'
+// Number
 
-// const age = 26    // number
-// const isProgrammer = true   // boolean
-
-// const _private = 'private'
-// const $ = 'some value'
-
-// // const if = 'mkef' // err
-// const withNum5 = '5'
-// // const 5withNum = 5 // err
-
-// 2 Мутирование
-// console.log('Имя человека: ' + fistName + ', а возраст человека: ' + age)
-// alert('Имя человека: ' + fistName + ', а возраст человека: ' + age)
-// const lastName = prompt('Введите фамилию')
-// alert(fistName + ' ' + lastName)
-
-// 3 Операторы
-// let currentYear = 2020
-// const birthYear = 1996
+// const num = 42 // integer
+// const float = 42.42 // float
+// const pow = 10e3
+// console.log(pow)
+// console.log(num)
+// console.log(float)
 //
-// //const age = currentYear - birthYear
+// console.log('MAX_SAFE_INTEGER', Number.MAX_SAFE_INTEGER)
+// console.log('Math.pow 53',Math.pow(2, 53) - 1)
+// console.log('MIN_SAFE_INTEGER', Number.MIN_SAFE_INTEGER)
 //
-// const a = 10
-// const b = 5
+// console.log('MAX_VALUE', Number.MAX_VALUE)
+// console.log('MIX_VALUE', Number.MIX_VALUE)
+// console.log('POSITIVE_INFINITY', Number.POSITIVE_INFINITY)
+// console.log('NEGATIVE_INFINITY', Number.NEGATIVE_INFINITY)
+// console.log('1 / 0', 1 / 0)
+// console.log(Number.NaN) // Not a Number
+// console.log(typeof NaN)
+// const weird = 2 / undefined
+// console.log(isNaN(weird))
+// console.log(isNaN(42))
+// console.log(Number.isFinite(Infinity))
+// console.log(Number.isFinite(42))
 //
-// let c = 32
-// c = c + a
-// c += a
-// c -= a
-// c *= a
-// c /= a
+// const stringInt = '40'
+// const stringFloat = '40.42'
+// console.log(Number.parseInt(stringInt) + 2)
+// console.log(parseInt(stringInt) + 2)
+// console.log(Number(stringInt) + 2)
+// console.log(+stringInt + 2)
 //
-// console.log(a + b)
-// console.log(a - b)
-// console.log(a * b)
-// console.log(a / b)
-// console.log(++currentYear)
-// console.log(--currentYear)
-// console.log(c)
+// console.log(parseFloat(stringFloat) + 2)
+// console.log(+stringFloat + 2)
 
 
-// 4 Типы данных
-
-// const isProgrammer = true
-// const name = 'Yriy'
-// const age = 26
-// let x
-// null
-// console.log(typeof isProgrammer)
-// console.log(typeof name)
-// console.log(typeof age)
-// console.log(typeof x)
-// console.log(null)
-
-// 5 Приоритет операторов
-// const fullAge = 26
-// const birthYear = 1993
-// const currentYear = 2020
-
-// > < >= <=
-// const isFullAge = currentYear - birthYear >= fullAge // 27 >= 26 => true
-
-// console.log(isFullAge)
-
-// 6 Условные операторы
-
-// const courseStatus = 'fail' // ready, fail, pending
+// console.log(0.4 + 0.2) // 0.6
 //
-// if (courseStatus === 'ready') {
-//     console.log('Курс уже готов и его можно проходить')
-// } else if (courseStatus === 'pending') {
-//     console.log('Курс пока находится в процессе разработки')
-// } else {
-//     console.log('Курс не получился')
-// }
+// // console.log((2 / 5 + 1 / 5))
 //
-// const isReady = true
-//
-// // if (isReady) {
-// //     console.log('Все готово')
-// // } else {
-// //     console.log('Все не готово')
-// // }
-//
-// // Тернарное выражение
-// isReady ? console.log('Все готово') : console.log('Все не готово')
+// console.log(parseFloat((0.4 + 0.2).toFixed(1)))
 
-// const num1 = 42 // number
-// const num2 = '42' // string
-//
-// console.log(num1 === num2)
 
-//7 Булевая логика
+// 2 BigInt
 
-//8 Функции
+// console.log(900719925474099199999999999999999n - 90071992547409919999999n)
+// console.log(-900719925474099199999999999999999.2222n - 90071992547409919999999n) // err
 
-// function calculateAge(year) {
-//     return 2020 - year
-// }
+
+// console.log(10n - 4)
+// console.log(parseInt(10n) - 4)
+// console.log(10n - BigInt(4))
 //
 //
-// function logInfoAbout(name, year) {
-//     const age = calculateAge(year)
+// console.log(5n / 2n)
+
+// 3 Math
+
+// console.log(Math.E)
+// console.log(Math.PI)
 //
-//     if (age > 0){
-//         console.log('Человек по имени ' + name + ' сейчас имеет возраст ' + age)
-//     } else {
-//         console.log('Вообще-то это уже будущее')
-//     }
-// }
 //
-// logInfoAbout('Владилен', 2000)
-// logInfoAbout('Владилен', 2022)
+// console.log(Math.sqrt(25))
+// console.log(Math.pow(3, 4))
+// console.log(Math.abs(-42))
+//
+// console.log(Math.max(42, 12, 23, 11, 422))
+//
+// console.log(Math.floor(4.9))
+//
+// console.log(Math.ceil(4.9))
 
 
-// 9 Массивы
 
-// const cars = ['мазда', 'мерседес', 'форд']
-// // console.log(cars)
-//
-// // const cars = new Array(['мазда', 'мерседес', 'форд'])
-// console.log(cars.length)
-//
-// console.log(cars[2])
-//
-// cars[0] = 'Porsche'
-// console.log(cars)
-//
-// cars[cars.length] = 'Mazda'
-// console.log(cars)
 
-// 10 Циклы
+function chainToSwitch(val) {
+    let answer = "";
+    // Only change code below this line
 
-// const cars = ['мазда', 'мерседес', 'форд', 'porsche', 'bmw', 'bugatti']
-//
-// // for (let i = 0; i < cars.length; i++) {
-// //     const car = cars[i]
-// //     console.log(car)
-// // }
-//
-// for (let car of cars) {
-//     console.log(car)
+    switch (val) {
 
-// 11 Объекты
-
-const person = {
-    firstName: 'Yuriy',
-    lastName: 'Pshenov',
-    year: 1996,
-    languages: ['Ru', 'En', 'De'],
-    hasWife: false,
-    greet: function() {
-        console.log('greet from person')
+        case "bob":
+            answer = "Marley";
+            break;
+        case 42:
+            answer = "The Answer";
+            break;
+        case 1:
+            answer = "There is no #1";
+            break;
+        case 99:
+            answer = "Missed me by this much!";
+            break;
+        case 7:
+            answer = "Ate Nine";
+            break;
     }
-}
 
-console.log(person.firstName)
-console.log(person['lastName'])
-const key = 'year'
-console.log(person[key])
-person.hasWife = true
-person.isProgrammer = true
-console.log(person)
-person.greet()
-
-
-const apples = 20
-
-for (let i = 22; i <= apples; i++) {
-    console.log(i)
+    // Only change code above this line
+    return answer;
 }
 
 
-function bim (weight, height) {
-
-}
